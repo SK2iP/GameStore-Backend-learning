@@ -1,0 +1,40 @@
+GET http://localhost:5205/games
+
+### 
+GET http://localhost:5205/games/1
+
+###
+POST http://localhost:5205/games
+Content-Type: application/json
+
+{
+    "name" : "Withcer",
+    "GenreID" : 3,
+    "Price" : 100.0,
+    "ReleaseDate" : "2021-01-01"
+}
+
+###
+PUT http://localhost:5205/games/3
+Content-Type: application/json
+
+{
+    "name" : "Cyberpunk",
+    "GenreId" : 2,
+    "Price" : 8.00,
+    "ReleaseDate" : "2000-01-01"
+}
+
+###
+PUT http://localhost:5205/games/6
+Content-Type: application/json
+
+{
+    "name" : "Monkey king",
+    "Genre" : "Action",
+    "Price" : 8.00,
+    "ReleaseDate" : "2000-01-01"
+}
+
+###
+DELETE http://localhost:5205/games/1
